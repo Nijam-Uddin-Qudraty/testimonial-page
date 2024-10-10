@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 *{
     font-family: "Sora", sans-serif;
+    margin: 0%;
+    padding: 0%;
 }
 main{
     background-color: aliceblue;
     display: flex;
     text-align: left;
-    padding: 5em 2em;
+    padding: 2em 2em;
     gap:1em;
 
 }
@@ -32,10 +34,16 @@ ul{
     padding: 0%;
 }
 .banner{
+    padding-top: 1em;
     width: 25%;
     margin-right: 2em;
 }
+.review{
+    margin:1em ;
+}
 .box1,.box2{
+    padding: 0.8em;
+    /* margin: 1em; */
     background-color: #fff;
     border-radius: 1.25em;
     font-size: .875em;
@@ -43,18 +51,31 @@ ul{
 }
 .box1{
     position: relative;
-    width: 60%;
-    left:40%;
+    left:calc(100% - 60% - 0.8em);
+    margin-bottom: 1.25em;
+    /* margin-right: 1em; */
 }
 @media screen and (max-width:576px) {
     main{
         flex-direction: column;
-        padding:0;
+        padding:0%;
+        margin: 0.5em;
+        /* text-align: center; */
     }
+    h2{
+        font-size: 1.6em;
+    }
+    .description-text{
+        font-size: 1em;
+    }
+    .banner{
+        margin-right:0% ;
+    }
+
 }
 @media screen and (min-width:576px) and (max-width:992px){
     main{
         flex-direction: column;
-        padding:2em 1em;
+        padding:1em 1em;
     }
 }
